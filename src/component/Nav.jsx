@@ -207,9 +207,10 @@ const Watch = styled.div`
         background-color: red;
         display: flex;
         align-items: center;
+        justify-content: center;
         font-size: 12px;
         padding: 0 3px;
-        border-radius: 7px;
+        border-radius: 50%;
     }
     
     &:hover{

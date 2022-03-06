@@ -9,5 +9,5 @@
   --hover-color: #3a3b3c;
   --hover-color2: #4c575f;
   --text-color: #e4e6eb;
-  --font-family: 'Poppins';
+  --font-family: 'Poppins' , sans-serif;
 }
