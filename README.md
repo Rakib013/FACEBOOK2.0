@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Getting Started with Update FB-CLONE repository, which is FACEBOOK2.0 now.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
