@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components';
 import Nav from '../component/Nav';
 import HomeLeft from '../component/HomeLeft';
+import HomeRight from '../component/HomeRight';
 
 
 function Home() {
@@ -18,7 +19,7 @@ function Home() {
         </Center>
 
         <Right>
-          right
+          <HomeRight />
         </Right>
 
       </Container>
@@ -29,8 +30,9 @@ function Home() {
 export default Home;
 
 const Container = styled.div`
-  left: 78px;
+  left: 73px;
   top: 0;
+  right: 0;
   position: fixed;
   background-color: var(--bg-color);
   width: 100%;
@@ -39,8 +41,9 @@ const Container = styled.div`
 `
 
 const Left = styled.div`
-  flex-basis: 23%;
+  flex-basis: 26%;
   overflow-y: scroll;
+  overflow-x: hidden;
 
   @media (max-width: 1100px) {
     flex-basis: 0%;
@@ -48,14 +51,16 @@ const Left = styled.div`
   }
 `
 const Center = styled.div`
-  flex-basis: 48%;
+  flex-basis: 45%;
 
   @media (max-width: 1100px) {
     flex-basis: 65%;
   }
 `
 const Right = styled.div`
-
+  flex-basis: 23%;
+  overflow-y: scroll;
+  overflow-x: hidden;
   @media (max-width: 900px) {
     display: none;
   }

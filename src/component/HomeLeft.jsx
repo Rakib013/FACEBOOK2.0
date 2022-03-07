@@ -144,6 +144,14 @@ function HomeLeft() {
                     <img src="/icon/grp1.png" alt="" />
                     <p>Bachelor Point</p>
                 </Content>
+                <Content>
+                    <img src="/icon/grp2.jpeg" alt="" />
+                    <p>Programming with meme</p>
+                </Content>
+                <Content>
+                    <img src="/icon/grp1.png" alt="" />
+                    <p>Bachelor Point</p>
+                </Content>
 
                 {
                     !shSee && (
@@ -172,6 +180,15 @@ function HomeLeft() {
                 }
 
             </Bottom>
+            <Links>
+                <a href="#r">Privacy</a>
+                <a href="#r">Terms</a>
+                <a href="#r">Advertising</a>
+                <a href="#r">Ad Choices</a>
+                <a href="#r">Cookies</a>
+                <a href="#r">More</a>
+                <p>Rakib @ 2022</p>
+            </Links>
         </Container>
     </>
   )
@@ -287,5 +304,46 @@ const Bottom = styled.div`
                 opacity: 100;
             }
         }
+    }
+`
+
+const Links = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+
+
+    &>a{
+        text-decoration: none;
+        font-size: 12px;
+        font-weight: 100;
+        color: #9ea1b8;
+        margin-right: 7px;
+        margin-bottom: 7px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;  
+        display: flex;
+        align-items: center;
+
+        &::after{
+            content: '';
+            display: block;
+            margin-left: 5px;
+            width: 2px;
+            height: 2px;
+            background-color: #9ea1b8;
+            border-radius: 50%;
+        }  
+
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+
+    &>p{
+        font-size: 12px;
+        font-weight: 100;
+        color: #9ea1b8;
     }
 `
