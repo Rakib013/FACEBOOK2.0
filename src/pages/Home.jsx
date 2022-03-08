@@ -41,9 +41,8 @@ const Container = styled.div`
 `
 
 const Left = styled.div`
-  flex-basis: 26%;
+  flex-basis: 25%;
   overflow-y: scroll;
-  overflow-x: hidden;
 
   @media (max-width: 1100px) {
     flex-basis: 0%;
@@ -51,6 +50,7 @@ const Left = styled.div`
   }
 `
 const Center = styled.div`
+  z-index: -1;
   flex-basis: 45%;
 
   @media (max-width: 1100px) {
@@ -58,9 +58,9 @@ const Center = styled.div`
   }
 `
 const Right = styled.div`
-  flex-basis: 23%;
-  overflow-y: scroll;
-  overflow-x: hidden;
+  flex-basis: 24%;
+  overflow: auto;
+  z-index: 99999;
   @media (max-width: 900px) {
     display: none;
   }
