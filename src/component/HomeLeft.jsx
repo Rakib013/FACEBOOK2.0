@@ -198,6 +198,7 @@ export default HomeLeft;
 
 const Container = styled.div`
     padding: 20px 0 0px 10px;
+    max-width: 360px;
 `
 
 const Top = styled.div`

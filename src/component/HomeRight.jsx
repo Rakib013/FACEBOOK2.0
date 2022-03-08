@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import Ads from './parts/Ads';
 import ContHead from './parts/ContHead';
+import Person from './parts/Person';
 
 function HomeRight() {
   return (
@@ -19,165 +20,18 @@ function HomeRight() {
         <Contacts>
           <ContHead />
           <Peoples>
-            <Person>
-              <div>
-                <img src="/icon/avatar.jpeg" alt="" />
-                <div></div>
-              </div>
-              <p>Sagor Ahammed Munna</p>
-            </Person>
-
-            <Person>
-              <div>
-                <img src="/icon/avatar2.jpeg" alt="" />
-                <div></div>
-              </div>
-              <p>Nur Jahan</p>
-            </Person>
-
-            <Person>
-              <div>
-                <img src="/icon/avatar3.png" alt="" />
-                <div></div>
-              </div>
-              <p>Fahimun Islam Lamia</p>
-            </Person>
-
-            <Person>
-              <div>
-                <img src="/icon/avatar4.jpeg" alt="" />
-                <div></div>
-              </div>
-              <p>Rakibul Islam</p>
-            </Person>
-
-            <Person>
-              <div>
-                <img src="/icon/avatar.jpeg" alt="" />
-                <div></div>
-              </div>
-              <p>Sagor Ahammed Munna</p>
-            </Person>
-
-            <Person>
-              <div>
-                <img src="/icon/avatar2.jpeg" alt="" />
-                <div></div>
-              </div>
-              <p>Nur Jahan</p>
-            </Person>
-
-            <Person>
-              <div>
-                <img src="/icon/avatar3.png" alt="" />
-                <div></div>
-              </div>
-              <p>Fahimun Islam Lamia</p>
-            </Person>
-
-            <Person>
-              <div>
-                <img src="/icon/avatar4.jpeg" alt="" />
-                <div></div>
-              </div>
-              <p>Rakibul Islam</p>
-            </Person>
-
-            <Person>
-              <div>
-                <img src="/icon/avatar.jpeg" alt="" />
-                <div></div>
-              </div>
-              <p>Sagor Ahammed Munna</p>
-            </Person>
-
-            <Person>
-              <div>
-                <img src="/icon/avatar2.jpeg" alt="" />
-                <div></div>
-              </div>
-              <p>Nur Jahan</p>
-            </Person>
-
-            <Person>
-              <div>
-                <img src="/icon/avatar3.png" alt="" />
-                <div></div>
-              </div>
-              <p>Fahimun Islam Lamia</p>
-            </Person>
-
-            <Person>
-              <div>
-                <img src="/icon/avatar4.jpeg" alt="" />
-                <div></div>
-              </div>
-              <p>Rakibul Islam</p>
-            </Person>
-
-            <Person>
-              <div>
-                <img src="/icon/avatar.jpeg" alt="" />
-                <div></div>
-              </div>
-              <p>Sagor Ahammed Munna</p>
-            </Person>
-
-            <Person>
-              <div>
-                <img src="/icon/avatar2.jpeg" alt="" />
-                <div></div>
-              </div>
-              <p>Nur Jahan</p>
-            </Person>
-
-            <Person>
-              <div>
-                <img src="/icon/avatar3.png" alt="" />
-                <div></div>
-              </div>
-              <p>Fahimun Islam Lamia</p>
-            </Person>
-
-            <Person>
-              <div>
-                <img src="/icon/avatar4.jpeg" alt="" />
-                <div></div>
-              </div>
-              <p>Rakibul Islam</p>
-            </Person>
-
-            <Person>
-              <div>
-                <img src="/icon/avatar.jpeg" alt="" />
-                <div></div>
-              </div>
-              <p>Sagor Ahammed Munna</p>
-            </Person>
-
-            <Person>
-              <div>
-                <img src="/icon/avatar2.jpeg" alt="" />
-                <div></div>
-              </div>
-              <p>Nur Jahan</p>
-            </Person>
-
-            <Person>
-              <div>
-                <img src="/icon/avatar3.png" alt="" />
-                <div></div>
-              </div>
-              <p>Fahimun Islam Lamia</p>
-            </Person>
-
-            <Person>
-              <div>
-                <img src="/icon/avatar4.jpeg" alt="" />
-                <div></div>
-              </div>
-              <p>Rakibul Islam</p>
-            </Person>
+            <Person />
+            <Person />
+            <Person />
+            <Person />
+            <Person />
+            <Person />
+            <Person />
+            <Person />
+            <Person />
+            <Person />
+            <Person />
+            <Person />
           </Peoples>
         </Contacts>
         <New>
@@ -227,49 +81,6 @@ const Contacts = styled.div`
 
 const Peoples = styled.div``
 
-const Person = styled.div`
-  display: flex;
-  align-items: center;
-  padding: 7px;
-  border-radius: 7px;
-  margin: 1px 0;
-  cursor: pointer;
-
-  &>div{
-    border: 2px solid #0062E0;
-    position: relative;
-    display: inline-flex;
-    margin-right: 15px;
-    border-radius: 50%;
-    padding: 2px;
-    &>img{
-      width: 36px;
-      height: 36px;
-      object-fit: cover;
-      border-radius: 50%;
-    }
-
-    &>div{
-      bottom: 0;
-      right: 0;
-      position: absolute;
-      width: 10px;
-      height: 10px;
-      background-color: #31a24c;
-      border: 1px solid var(--bg-color);
-      border-radius: 50%;
-    }
-  }
-
-  &>p{
-    font-size: 14px;
-    font-weight: 100;
-  }
-
-  &:hover{
-    background-color: var(--hover-color);
-  }
-`
 
 const New = styled.div`
   position: fixed;
