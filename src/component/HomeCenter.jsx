@@ -1,13 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
+import CreatePost from './parts/CreatePost';
 import Stories from './parts/Stories';
 
 function HomeCenter() {
   return (
     <>
-        <Container>
-            <Stories />
-        </Container>
+      <Container>
+        <Stories />
+        <CreatePost />
+      </Container>
     </>
   )
 }
@@ -15,5 +17,5 @@ function HomeCenter() {
 export default HomeCenter;
 
 const Container = styled.div`
-    padding: 20px;
+  padding: 20px;
 `

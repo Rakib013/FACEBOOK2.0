@@ -48,7 +48,7 @@ const Profile = styled.div`
   z-index: 9999;
   max-width: 325px;
   top: -220px;
-  right: 0;
+  right: 10px;
   background-color: #252626;
   padding: 10px;
   border-radius: 10px;

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import Ads from './parts/Ads';
 import ContHead from './parts/ContHead';

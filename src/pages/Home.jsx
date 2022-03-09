@@ -42,7 +42,7 @@ const Container = styled.div`
 `
 
 const Left = styled.div`
-  flex-basis: 20%;
+  flex-basis: 310px;
   overflow-y: scroll;
 
   @media (max-width: 1100px) {
@@ -51,17 +51,15 @@ const Left = styled.div`
   }
 `
 const Center = styled.div`
-  z-index: -1;
-  flex-basis: 50%;
+  flex-basis: 710px;
 
   @media (max-width: 1100px) {
     flex-basis: 65%;
   }
 `
 const Right = styled.div`
-  flex-basis: 25%;
+  flex-basis: 350px;
   overflow: auto;
-  z-index: 99999;
   @media (max-width: 900px) {
     display: none;
   }
