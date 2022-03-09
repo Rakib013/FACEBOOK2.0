@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Nav from '../component/Nav';
 import HomeLeft from '../component/HomeLeft';
 import HomeRight from '../component/HomeRight';
+import HomeCenter from '../component/HomeCenter';
 
 
 function Home() {
@@ -15,7 +16,7 @@ function Home() {
         </Left>
 
         <Center>
-          center
+          <HomeCenter />
         </Center>
 
         <Right>
@@ -41,7 +42,7 @@ const Container = styled.div`
 `
 
 const Left = styled.div`
-  flex-basis: 25%;
+  flex-basis: 20%;
   overflow-y: scroll;
 
   @media (max-width: 1100px) {
@@ -51,14 +52,14 @@ const Left = styled.div`
 `
 const Center = styled.div`
   z-index: -1;
-  flex-basis: 45%;
+  flex-basis: 50%;
 
   @media (max-width: 1100px) {
     flex-basis: 65%;
   }
 `
 const Right = styled.div`
-  flex-basis: 24%;
+  flex-basis: 25%;
   overflow: auto;
   z-index: 99999;
   @media (max-width: 900px) {
