@@ -2,6 +2,7 @@ import { useState } from "react";
 import styled from "styled-components"
 
 function Nav() {
+    const [home, setHome] = useState(false);
     const [nActive, setNActive] = useState(false);
     const [mActive, setMActive] = useState(false);
     const [mnActive, setMnActive] = useState(false);
@@ -20,6 +21,15 @@ function Nav() {
                         <path d="M15 35.8C6.5 34.3 0 26.9 0 18 0 8.1 8.1 0 18 0s18 8.1 18 18c0 8.9-6.5 16.3-15 17.8l-1-.8h-4l-1 .8z"></path>
                         <path class="p361ku9c" fill='white' d="M25 23l.8-5H21v-3.5c0-1.4.5-2.5 2.7-2.5H26V7.4c-1.3-.2-2.7-.4-4-.4-4.1 0-7 2.5-7 7v4h-4.5v5H15v12.7c1 .2 2 .3 3 .3s2-.1 3-.3V23h4z"></path>
                     </svg>
+                </Logo>
+
+                <Logo fill={home ? "#3c80da" : "white"} color={home ? '#3a4d72' : '#3e3f3f'} onClick={e=> {
+                    setHome(!home);
+                    setNActive(false);
+                    setMActive(false);
+                    setMnActive(false);
+                }}>
+                    <img src="/icon/left/home.png" alt="" />
                 </Logo>
 
                 <Logo color="#3e3f3f">
@@ -181,6 +191,10 @@ const Logo = styled.div`
         background-color: red;
         border-radius: 50%;
         font-size: 11px;
+    }
+
+    &>img{
+        filter: brightness(0) invert(1);
     }
 `
 

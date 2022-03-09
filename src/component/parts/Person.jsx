@@ -49,11 +49,15 @@ const Profile = styled.div`
   max-width: 325px;
   top: -220px;
   right: 0;
-  background-color: var(--hover-color);
+  background-color: #252626;
   padding: 10px;
   border-radius: 10px;
   display: ${props=>props.mouse?'flex':'none'};
   transition: 0.3s;
+
+  box-shadow: 1px 1px 44px 0px rgba(255,255,255,0.12);
+-webkit-box-shadow: 1px 1px 44px 0px rgba(255,255,255,0.12);
+-moz-box-shadow: 1px 1px 44px 0px rgba(255,255,255,0.12);
 
   &:hover{
     display: flex;
