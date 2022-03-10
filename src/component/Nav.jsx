@@ -1,5 +1,6 @@
 import { useState } from "react";
 import styled from "styled-components"
+import Menu from "./parts/LeftParts/Menu";
 
 function Nav() {
     const [home, setHome] = useState(false);
@@ -208,6 +209,7 @@ const Bottom = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    bottom: 0;
 `
 
 const Content = styled.div`

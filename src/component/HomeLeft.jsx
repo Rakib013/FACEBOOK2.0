@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import styled from 'styled-components';
+import Menu from './parts/LeftParts/Menu';
 
 function HomeLeft() {
     const [see, setSee] = useState(false);
@@ -189,6 +190,7 @@ function HomeLeft() {
                 <a href="#r">More</a>
                 <p>Rakib @ 2022</p>
             </Links>
+            <Menu />
         </Container>
     </>
   )

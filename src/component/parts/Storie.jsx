@@ -5,7 +5,7 @@ function Storie() {
   return (
     <>
         <Content>
-            <img src="/icon/nushrat.png" alt="" />
+            <img src="/icon/fahi.jpg" alt="" />
             <div>
               <img src="/icon/avatar.jpeg" alt="" />
               <p>Nushrat Jahan Nilu</p>

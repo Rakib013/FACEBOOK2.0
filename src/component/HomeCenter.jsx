@@ -5,6 +5,8 @@ import PicPost from './parts/PicPost';
 import ProfPost from './parts/ProfPost';
 import Room from './parts/Room';
 import Stories from './parts/Stories';
+import TextPost from './parts/TextPost';
+import VideoPost from './parts/VideoPost';
 
 function HomeCenter() {
   return (
@@ -16,6 +18,8 @@ function HomeCenter() {
 
         <Posts>
           <PicPost />
+          <VideoPost />
+          <TextPost />
           <ProfPost />
           <PicPost />
           <PicPost />
