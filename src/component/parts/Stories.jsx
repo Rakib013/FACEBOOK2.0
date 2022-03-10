@@ -25,6 +25,10 @@ function Stories() {
             <Storie />
             <Storie />
             <Storie />
+
+            <div>
+                <svg viewBox="0 0 20 20" fill='white' width="1.2em" height="1.2em" class="a8c37x1j ms05siws hwsy1cff b7h9ocf4 py1f6qlh em6zcovv jnigpg78 odw8uiq3"><g fill-rule="evenodd" transform="translate(-446 -350)"><g fill-rule="nonzero"><path d="M101.751 211.001a1 1 0 0 0 1.415 1.415l5.208-5.209a1 1 0 0 0 0-1.414l-5.208-5.209A1 1 0 0 0 101.75 202l4.501 4.501-4.5 4.501z" transform="translate(355 153.5)"></path><path d="M94.334 207.5h12.812a1 1 0 1 0 0-2H94.333a1 1 0 1 0 0 2z" transform="translate(355 153.5)"></path></g></g></svg>
+            </div>
         </Storiess>
     </Container>
   )
@@ -35,12 +39,33 @@ export default Stories;
 
 const Container = styled.div`
     display: flex;
+    width: 100%;
 `
 
 const Storiess = styled.div`
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    display: flex;
+    justify-content: space-between;
     grid-gap: 10px;
+    position: relative;
+
+    &>div:last-child{
+        right: -20px;
+        top: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background-color: #393a3a;
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        transition: 0.3s;
+
+        &:hover{
+            background-color: var(--hover-color2);
+        }
+    }
 `
 
 const First = styled.div`
@@ -54,6 +79,7 @@ const Content = styled.div`
     background-color: var(--hover-color);
     overflow: hidden;
     cursor: pointer;
+
     &>div:first-child{
         height: 130px;
         &>img{
