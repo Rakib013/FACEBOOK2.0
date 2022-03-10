@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import CreatePost from './parts/CreatePost';
 import PicPost from './parts/PicPost';
+import ProfPost from './parts/ProfPost';
 import Room from './parts/Room';
 import Stories from './parts/Stories';
 
@@ -15,6 +16,7 @@ function HomeCenter() {
 
         <Posts>
           <PicPost />
+          <ProfPost />
           <PicPost />
           <PicPost />
         </Posts>
