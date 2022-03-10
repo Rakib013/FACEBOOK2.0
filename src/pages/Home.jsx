@@ -52,6 +52,11 @@ const Left = styled.div`
 `
 const Center = styled.div`
   flex-basis: 710px;
+  overflow: auto;
+
+  &::-webkit-scrollbar{
+    display: none;
+  }
 
   @media (max-width: 1100px) {
     flex-basis: 65%;
