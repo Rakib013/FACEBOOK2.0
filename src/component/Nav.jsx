@@ -1,11 +1,22 @@
 import { useState } from "react";
 import styled from "styled-components"
 
+
+
 function Nav() {
     const [home, setHome] = useState(false);
     const [nActive, setNActive] = useState(false);
     const [mActive, setMActive] = useState(false);
     const [mnActive, setMnActive] = useState(false);
+    
+    const handleMenu = (e) => {
+        if(mnActive){
+            document.getElementById("menu").style.display = "none";
+        }else{
+            document.getElementById("menu").style.display = "block";
+        }
+    }
+
   return (
     <>
         <Container>
@@ -59,6 +70,7 @@ function Nav() {
                 </Logo>
 
                 <Logo onClick={e=>{
+                    handleMenu();
                     setMnActive(!mnActive);
                     setMActive(false);
                     setNActive(false);
@@ -208,6 +220,7 @@ const Bottom = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    bottom: 0;
 `
 
 const Content = styled.div`
