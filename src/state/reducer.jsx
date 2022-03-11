@@ -2,19 +2,15 @@
 export const initialstate = {
     profile: null,
     posts: null,
+    isMenu: false,
 }
 
 const reducer = (state, action) => {
     switch (action.type) {
-        case "PROFILE":
+        case "MENU":
             return {
                 ...state,
-                profile: action.profile,
-            };
-        case "POSTS":
-            return {
-                ...state,
-                posts: action.posts,
+                isMenu: action.isMenu,
             };
         default:
             return state;
