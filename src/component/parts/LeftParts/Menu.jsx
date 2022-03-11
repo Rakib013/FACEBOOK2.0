@@ -7,7 +7,7 @@ function Menu() {
     console.log(isMenu);
   return (
     <>
-        <Container>
+        <Container id="menu" className='menu'>
             <h4>Menu</h4>
             <Content>
                 <Left>
@@ -15,6 +15,120 @@ function Menu() {
                         <i></i>
                         <input type="text" placeholder='Search' />
                     </Search>
+
+                    <Socials>
+                        <h4>Social</h4>
+                        <Social>
+                            <img src="/icon/left/events.png" alt="" />
+                            <div>
+                                <span>Events</span>
+                                <p>
+                                    Organize or find events and other things to do online and nearby.
+                                </p>
+                            </div>
+                        </Social>
+
+                        <Social>
+                            <img src="/icon/left/friends.png" alt="" />
+                            <div>
+                                <span>Friends</span>
+                                <p>
+                                    Search for friends or people you may know.
+                                </p>
+                            </div>
+                        </Social>
+
+                        <Social>
+                            <img src="/icon/left/groups.png" alt="" />
+                            <div>
+                                <span>Groups</span>
+                                <p>
+                                    Connect with people who share your interests.
+                                </p>
+                            </div>
+                        </Social>
+
+                        <Social>
+                            <img src="/icon/left/news.png" alt="" />
+                            <div>
+                                <span>News</span>
+                                <p>
+                                    See relevent posts from people and pages you follow.
+                                </p>
+                            </div>
+                        </Social>
+
+                        <Social>
+                            <img src="/icon/left/pages.png" alt="" />
+                            <div>
+                                <span>Pages</span>
+                                <p>
+                                    Discover and connect with business on Facebook.
+                                </p>
+                            </div>
+                        </Social>
+                    </Socials>
+
+                    <Border></Border>
+
+                    <Socials>
+                        <h4>Entertainment</h4>
+                        <Entertainment>
+                            <img src="/icon/left/gaming.png" alt="" />
+                            <div>
+                                <span>Gaming video</span>
+                                <p>
+                                    Watch and connect with your favorite games and streamers.
+                                </p>
+                            </div>
+                        </Entertainment>
+
+                        <Entertainment>
+                            <img src="/icon/left/stream.png" alt="" />
+                            <div>
+                                <span>Play Games</span>
+                                <p>
+                                    Play your favourite games.
+                                </p>
+                            </div>
+                        </Entertainment>
+
+                        <Entertainment>
+                            <img src="/icon/watch.png" alt="" />
+                            <div>
+                                <span>Watch</span>
+                                <p>
+                                    A video destination personalized to your interest and connection.
+                                </p>
+                            </div>
+                        </Entertainment>
+                    </Socials>
+                    <Border></Border>
+
+                    <Socials>
+                        <h4>Shopping</h4>
+                        <Shop>
+                            <img src="/icon/left/pay.png" alt="" />
+                            <div>
+                                <span>Facebook Pay</span>
+                                <p>
+                                    A seamless, secure way to pay on the apps you already use.
+                                </p>
+                            </div>
+                        </Shop>
+
+                        <Shop>
+                            <img src="/icon/left/market.png" alt="" />
+                            <div>
+                                <span>Marketplace</span>
+                                <p>
+                                    Buy and sell in your community
+                                </p>
+                            </div>
+                        </Shop>
+                    </Socials>
+
+
                 </Left>
                 <Right>
                     <h2>Create</h2>
@@ -87,11 +201,12 @@ function Menu() {
 export default Menu;
 
 const Container = styled.div`
+    display: none;
     background-color: #323436;
     padding: 10px 10px 0 10px;
-    width: 480px;
-    height: 750px;
-    top: 13px;
+    width: 565px;
+    height: 815px;
+    top: 0;
     left: 73px;
     overflow: visible;
     position: fixed;
@@ -101,6 +216,7 @@ const Container = styled.div`
     &>h4{
         font-size: 22px;
         font-weight: 300;
+        margin: 5px;
     }
 `
 
@@ -110,12 +226,17 @@ const Content = styled.div`
 `
 
 const Left = styled.div`
-    flex-basis: 60%;
+    flex-basis: 65%;
     background-color: var(--bg-color);
-    height: 685px;
+    height: 735px;
     margin-right: 10px;
     border-radius: 10px;
     padding: 10px;
+    overflow: scroll;
+
+    &::-webkit-scrollbar{
+        display: none;
+    }
 `
 
 const Search = styled.div`
@@ -199,3 +320,45 @@ const Border = styled.div`
     border-top: 1px solid #323436;
     margin: 15px 0;
 `
+
+const Socials = styled.div`
+    &>h4{
+        margin: 10px 0;
+        font-weight: 100;
+    }
+`
+
+const Social = styled.div`
+    display: flex;
+    padding: 6px 5px;
+    margin-top: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &>img{
+        width: 36px;
+        height: 36px;
+        object-fit: cover;
+        margin-right: 10px;
+    }
+
+    &>div{
+        &>p{
+            font-size: 12px;
+            line-height: 1.34;
+            color: #9ea1b8;
+        }
+
+        &>span{
+            font-size: 14px;
+        }
+    }
+
+    &:hover{
+        background-color: var(--hover-color);
+    }
+`
+
+const Entertainment = styled(Social)``
+
+const Shop = styled(Entertainment)``
