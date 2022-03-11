@@ -12,8 +12,8 @@ function Comments({viewComments}) {
                                 <img src="/icon/nushrat.png" alt="" />
                                 <div>
                                     <div>
-                                        <h5>Taseen Ahnaf</h5>
-                                        <p>Vai eta kothai?</p>
+                                        <h5>Nushrat jahan</h5>
+                                        <p>Vai eta kothai re?</p>
                                     </div>
                                     <div>
                                         <p>Like</p>
@@ -25,10 +25,10 @@ function Comments({viewComments}) {
 
                             <Replyes>
                                 <Reply>
-                                    <img src="/icon/nushrat.png" alt="" />
+                                    <img src="/icon/avatar2.jpeg" alt="" />
                                     <div>
                                         <div>
-                                            <h5>Taseen Ahnaf</h5>
+                                            <h5>Fahimun Islam Lamia</h5>
                                             <p>Ore vai eta jatrabari. jaia ja dekhchi ami crash.</p>
                                         </div>
                                         <div>
@@ -40,10 +40,10 @@ function Comments({viewComments}) {
                                 </Reply>
 
                                 <Reply>
-                                    <img src="/icon/nushrat.png" alt="" />
+                                    <img src="/icon/avatar3.png" alt="" />
                                     <div>
                                         <div>
-                                            <h5>Taseen Ahnaf</h5>
+                                            <h5>Nushera Tajrin</h5>
                                             <p>Ore vai eta jatrabari</p>
                                         </div>
                                         <div>
@@ -55,10 +55,10 @@ function Comments({viewComments}) {
                                 </Reply>
 
                                 <Reply>
-                                    <img src="/icon/nushrat.png" alt="" />
+                                    <img src="/icon/avatar2.jpeg" alt="" />
                                     <div>
                                         <div>
-                                            <h5>Taseen Ahnaf</h5>
+                                            <h5>Fahimun Islam Lamia</h5>
                                             <p>Ore vai eta jatrabari. jaia ja dekhchi ami crash. Yo, Yo, King</p>
                                         </div>
                                         <div>
@@ -86,11 +86,11 @@ function Comments({viewComments}) {
 
                 <Comment>
                     <div>
-                        <img src="/icon/nushrat.png" alt="" />
+                        <img src="/icon/avatar.jpeg" alt="" />
                         <div>
                             <div>
-                                <h5>Taseen Ahnaf</h5>
-                                <p>Vai eta kothai re?</p>
+                                <h5>Sagor Ahammed Munna</h5>
+                                <p>Vai eta kothai?</p>
                             </div>
                             <div>
                                 <p>Like</p>
@@ -247,6 +247,7 @@ const Reply = styled.div`
     &>img{
         width: 25px;
         height: 25px;
+        object-fit: cover;
         border-radius: 50%;
     }
 

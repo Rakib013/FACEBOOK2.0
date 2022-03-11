@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import Ads from './parts/Ads';
-import ContHead from './parts/ContHead';
-import Person from './parts/Person';
+import Ads from './HomeRight/Ads';
+import ContHead from './HomeRight/ContHead';
+import Person from './HomeRight/Person';
 
 function HomeRight() {
   return (

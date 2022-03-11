@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import styled from 'styled-components';
-import Comments from './Comments';
+import Comments from './comments/Comments';
 
-function PicPost() {
+function VideoPost() {
     const [viewComments, setViewComments] = useState(false);
   return (
     <>
@@ -23,7 +23,7 @@ function PicPost() {
                 </User>
 
                 <Post>
-                    <img src="/icon/avatar.jpeg" alt="" />
+                    <video src="/icon/video.mp4" controls></video>
                 </Post>
 
                 <Bottom>
@@ -66,7 +66,8 @@ function PicPost() {
   )
 }
 
-export default PicPost
+export default VideoPost;
+
 
 const Container = styled.div`
     background-color: var(--box-color);
@@ -148,8 +149,8 @@ const User = styled.div`
 `
 
 const Post = styled.div`
-    &>img{
-        object-fit: cover;
+    &>video{
+        object-fit: contain;
         width: 100%;
     }
 `

@@ -1,12 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
-import CreatePost from './parts/CreatePost';
-import PicPost from './parts/PicPost';
-import ProfPost from './parts/ProfPost';
-import Room from './parts/Room';
-import Stories from './parts/Stories';
-import TextPost from './parts/TextPost';
-import VideoPost from './parts/VideoPost';
+import CreatePost from './HomeCenter/createPost/CreatePost';
+import PicPost from './HomeCenter/Posts/PicPost';
+import ProfPost from './HomeCenter/Posts/ProfPost';
+import Room from './HomeCenter/room/Room';
+import Stories from './HomeCenter/story/Stories';
+import TextPost from './HomeCenter/Posts/TextPost';
+import VideoPost from './HomeCenter/Posts/VideoPost';
+import PostModel from './HomeCenter/Posts/PostModel';
 
 function HomeCenter() {
   return (
@@ -17,6 +18,7 @@ function HomeCenter() {
         <Room />
 
         <Posts>
+          <PostModel vidSrc={"/icon/video.mp4"}/>
           <PicPost />
           <VideoPost />
           <TextPost />

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import styled from 'styled-components';
-import Menu from './parts/LeftParts/Menu';
+import Menu from './HomeLeft/Menu';
 
 function HomeLeft() {
     const [see, setSee] = useState(false);
