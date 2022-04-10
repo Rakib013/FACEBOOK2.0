@@ -8,7 +8,7 @@ function Storie() {
             <img src="/icon/fahi.jpg" alt="" />
             <div>
               <img src="/icon/avatar.jpeg" alt="" />
-              <p>Nushrat Jahan Nilu</p>
+              <p>Rakibul Islam</p>
             </div>
         </Content>
     </>

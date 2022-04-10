@@ -19,11 +19,15 @@ function HomeCenter() {
 
         <Posts>
           <PostModel vidSrc={"/icon/video.mp4"}/>
+          <ProfPost />
+          <PostModel imgSrc={"/icon/grp1.png"}/>
+          <PostModel imgSrc={"/icon/grp2.jpeg"}/>
+          <PostModel imgSrc={"/icon/grp1.png"}/>
+          <PostModel imgSrc={"/icon/grp2.jpeg"}/>
+          <PostModel imgSrc={"/icon/grp1.png"}/>
           <PicPost />
           <VideoPost />
           <TextPost />
-          <ProfPost />
-          <PicPost />
           <PicPost />
         </Posts>
 
