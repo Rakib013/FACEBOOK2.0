@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import styled from 'styled-components';
 import Menu from './HomeLeft/Menu';
+import Notification from './HomeLeft/Notification';
 
 function HomeLeft() {
     const [see, setSee] = useState(false);
@@ -191,6 +192,7 @@ function HomeLeft() {
                 <p>Rakib @ 2022</p>
             </Links>
             <Menu />
+            <Notification />
         </Container>
     </>
   )

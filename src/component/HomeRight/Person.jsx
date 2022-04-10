@@ -13,7 +13,7 @@ function Person() {
             <div></div>
           </div>
           <div>
-            <h4>Nushrat Jahan Nuchu</h4>
+            <h4>Rakibul Islam</h4>
             <Info>
               <img src="/icon/right/profileFriends.png" alt="" />
               <p>48 mutual friends inluding <b>Sagor ahammed</b> and <b>Fahimun</b></p>
@@ -27,10 +27,10 @@ function Person() {
         </Profile>
         <Persone onMouseOver={e=>setMouse(true)} onMouseOut={e=>setMouse(false)}>
             <div>
-              <img src="/icon/avatar3.png" alt="" />
+              <img src="/icon/avatar.jpeg" alt="" />
               <div></div>
             </div>
-            <p>Nushrat Jahan Nila</p>
+            <p>Rakibul Islam</p>
         </Persone>
       </Container>
     </>

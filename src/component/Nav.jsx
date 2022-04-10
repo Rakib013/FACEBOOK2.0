@@ -4,7 +4,7 @@ import styled from "styled-components"
 
 
 function Nav() {
-    const [home, setHome] = useState(false);
+    const [home, setHome] = useState(true);
     const [nActive, setNActive] = useState(false);
     const [mActive, setMActive] = useState(false);
     const [mnActive, setMnActive] = useState(false);
@@ -14,6 +14,14 @@ function Nav() {
             document.getElementById("menu").style.display = "none";
         }else{
             document.getElementById("menu").style.display = "block";
+        }
+    }
+
+    const handleNotification = (e) => {
+        if(nActive){
+            document.getElementById("notification").style.display = "none";
+        }else{
+            document.getElementById("notification").style.display = "block";
         }
     }
 
@@ -48,6 +56,7 @@ function Nav() {
                 </Logo>
 
                 <Logo onClick={e=> {
+                    handleNotification();
                     setNActive(!nActive);
                     setMActive(false);
                     setMnActive(false);
