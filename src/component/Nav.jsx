@@ -14,6 +14,7 @@ function Nav() {
             document.getElementById("menu").style.display = "none";
         }else{
             document.getElementById("menu").style.display = "block";
+            document.getElementById("notification").style.display = "none";
         }
     }
 
@@ -21,6 +22,7 @@ function Nav() {
         if(nActive){
             document.getElementById("notification").style.display = "none";
         }else{
+            document.getElementById("menu").style.display = "none";
             document.getElementById("notification").style.display = "block";
         }
     }

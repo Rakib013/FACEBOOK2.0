@@ -32,7 +32,185 @@ function Notification() {
             </SeeButton>
 
             <NotificationList>
+                <NotificationItem>
+                    <div>
+                        <img src="/icon/fara.jpeg" alt="" />
+                        <i></i>
+                    </div>
+                    <div>
+                        <b>Ilman Farabi</b> commented on <b> Nur jahan </b> Post.
+                    </div>
+                </NotificationItem>
 
+                <NotificationItem>
+                    <div>
+                        <img src="/icon/fara.jpeg" alt="" />
+                        <i></i>
+                    </div>
+                    <div>
+                        <b>Ilman Farabi</b> commented on <b> Nur jahan </b> Post.
+                    </div>
+                </NotificationItem>
+
+                <NotificationItem>
+                    <div>
+                        <img src="/icon/fara.jpeg" alt="" />
+                        <i></i>
+                    </div>
+                    <div>
+                        <b>Ilman Farabi</b> commented on <b> Nur jahan </b> Post.
+                    </div>
+                </NotificationItem>
+
+                <NotificationItem>
+                    <div>
+                        <img src="/icon/fara.jpeg" alt="" />
+                        <i></i>
+                    </div>
+                    <div>
+                        <b>Ilman Farabi</b> commented on <b> Nur jahan </b> Post.
+                    </div>
+                </NotificationItem>
+
+                <NotificationItem>
+                    <div>
+                        <img src="/icon/fara.jpeg" alt="" />
+                        <i></i>
+                    </div>
+                    <div>
+                        <b>Ilman Farabi</b> commented on <b> Nur jahan </b> Post.
+                    </div>
+                </NotificationItem>
+
+                <NotificationItem>
+                    <div>
+                        <img src="/icon/fara.jpeg" alt="" />
+                        <i></i>
+                    </div>
+                    <div>
+                        <b>Ilman Farabi</b> commented on <b> Nur jahan </b> Post.
+                    </div>
+                </NotificationItem>
+
+                <NotificationItem>
+                    <div>
+                        <img src="/icon/fara.jpeg" alt="" />
+                        <i></i>
+                    </div>
+                    <div>
+                        <b>Ilman Farabi</b> commented on <b> Nur jahan </b> Post.
+                    </div>
+                </NotificationItem>
+
+                <NotificationItem>
+                    <div>
+                        <img src="/icon/fara.jpeg" alt="" />
+                        <i></i>
+                    </div>
+                    <div>
+                        <b>Ilman Farabi</b> commented on <b> Nur jahan </b> Post.
+                    </div>
+                </NotificationItem>
+
+                <NotificationItem>
+                    <div>
+                        <img src="/icon/fara.jpeg" alt="" />
+                        <i></i>
+                    </div>
+                    <div>
+                        <b>Ilman Farabi</b> commented on <b> Nur jahan </b> Post.
+                    </div>
+                </NotificationItem>
+
+                <NotificationItem>
+                    <div>
+                        <img src="/icon/fara.jpeg" alt="" />
+                        <i></i>
+                    </div>
+                    <div>
+                        <b>Ilman Farabi</b> commented on <b> Nur jahan </b> Post.
+                    </div>
+                </NotificationItem>
+
+                <NotificationItem>
+                    <div>
+                        <img src="/icon/fara.jpeg" alt="" />
+                        <i></i>
+                    </div>
+                    <div>
+                        <b>Ilman Farabi</b> commented on <b> Nur jahan </b> Post.
+                    </div>
+                </NotificationItem>
+
+                <NotificationItem>
+                    <div>
+                        <img src="/icon/fara.jpeg" alt="" />
+                        <i></i>
+                    </div>
+                    <div>
+                        <b>Ilman Farabi</b> commented on <b> Nur jahan </b> Post.
+                    </div>
+                </NotificationItem>
+
+                <NotificationItem>
+                    <div>
+                        <img src="/icon/fara.jpeg" alt="" />
+                        <i></i>
+                    </div>
+                    <div>
+                        <b>Ilman Farabi</b> commented on <b> Nur jahan </b> Post.
+                    </div>
+                </NotificationItem>
+
+                <NotificationItem>
+                    <div>
+                        <img src="/icon/fara.jpeg" alt="" />
+                        <i></i>
+                    </div>
+                    <div>
+                        <b>Ilman Farabi</b> commented on <b> Nur jahan </b> Post.
+                    </div>
+                </NotificationItem>
+
+                <NotificationItem>
+                    <div>
+                        <img src="/icon/fara.jpeg" alt="" />
+                        <i></i>
+                    </div>
+                    <div>
+                        <b>Ilman Farabi</b> commented on <b> Nur jahan </b> Post.
+                    </div>
+                </NotificationItem>
+
+                <NotificationItem>
+                    <div>
+                        <img src="/icon/fara.jpeg" alt="" />
+                        <i></i>
+                    </div>
+                    <div>
+                        <b>Ilman Farabi</b> commented on <b> Nur jahan </b> Post.
+                    </div>
+                </NotificationItem>
+
+                <NotificationItem>
+                    <div>
+                        <img src="/icon/fara.jpeg" alt="" />
+                        <i></i>
+                    </div>
+                    <div>
+                        <b>Ilman Farabi</b> commented on <b> Nur jahan </b> Post.
+                    </div>
+                </NotificationItem>
+
+                <NotificationItem>
+                    <div>
+                        <img src="/icon/fara.jpeg" alt="" />
+                        <i></i>
+                    </div>
+                    <div>
+                        <b>Ilman Farabi</b> commented on <b> Nur jahan </b> Post.
+                    </div>
+                </NotificationItem>
             </NotificationList>
         </Container>
     </>
@@ -42,6 +220,7 @@ function Notification() {
 export default Notification;
 
 const Container = styled.div`
+    display: none;
     width: 350px;
     background-color: #323436;
     top: 0;
@@ -49,6 +228,8 @@ const Container = styled.div`
     z-index: 999999;
     position: fixed;
     padding: 0 20px;
+    height: 100%;
+    overflow-y: scroll;
 `
 
 const Title = styled.div`
@@ -120,5 +301,39 @@ const SeeButton = styled.div`
 `
 
 const NotificationList = styled.div`
-    
+    margin-top: 10px;
+`
+
+const NotificationItem = styled.div`
+    display: flex;
+    margin-bottom: 10px;
+    &>div:first-child{
+        display: flex;
+        position: relative;
+
+
+        &>img{
+            height: 56px;
+            width: 56px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        &>i{
+            height: 28px;
+            width: 28px;
+            background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/yL/r/h2iqxBqDts0.png?_nc_eui2=AeFBkJUKoyPUzqp2xh7Vq3Aca0x3MbGzqF5rTHcxsbOoXgCbLnUdoXUpXmwYCdOokAgUgYMS89yr7oSjHN08Ovmx);
+            background-position: 0px -696px;
+            background-size: auto;
+            background-repeat: no-repeat;
+            display: inline-block;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+    }
+
+    &>div:last-child{
+        margin-left: 10px;
+        font-size: 14px;
+    }
 `

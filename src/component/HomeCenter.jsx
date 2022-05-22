@@ -1,18 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
 import CreatePost from './HomeCenter/createPost/CreatePost';
-import PicPost from './HomeCenter/Posts/PicPost';
 import ProfPost from './HomeCenter/Posts/ProfPost';
 import Room from './HomeCenter/room/Room';
 import Stories from './HomeCenter/story/Stories';
-import TextPost from './HomeCenter/Posts/TextPost';
-import VideoPost from './HomeCenter/Posts/VideoPost';
 import PostModel from './HomeCenter/Posts/PostModel';
+import Upload from './HomeCenter/uploadBox/Upload';
 
 function HomeCenter() {
   return (
     <>
       <Container>
+        <Upload />
         <Stories />
         <CreatePost />
         <Room />
@@ -24,11 +23,7 @@ function HomeCenter() {
           <PostModel imgSrc={"/icon/grp2.jpeg"}/>
           <PostModel imgSrc={"/icon/grp1.png"}/>
           <PostModel imgSrc={"/icon/grp2.jpeg"}/>
-          <PostModel imgSrc={"/icon/grp1.png"}/>
-          <PicPost />
-          <VideoPost />
-          <TextPost />
-          <PicPost />
+          <PostModel text="Hope you guys doing well!"/>
         </Posts>
 
       </Container>
@@ -39,6 +34,7 @@ function HomeCenter() {
 export default HomeCenter;
 
 const Container = styled.div`
+  position: relative;
   padding: 20px;
 `
 

@@ -37,7 +37,9 @@ function PostModel({imgSrc, vidSrc, text}) {
 
                     {
                         text && (
-                            <p>{text}</p>
+                            <div style={{padding: "5px 5px 5px 20px"}}>
+                                <p>{text}</p>
+                            </div>
                         )
                     }
                 </Post>
@@ -62,7 +64,7 @@ function PostModel({imgSrc, vidSrc, text}) {
                             <i></i>
                             Like
                         </Button>
-                        <Button spos="-209px" url="https://static.xx.fbcdn.net/rsrc.php/v3/yE/r/BD8jnr5MFVK.png?_nc_eui2=AeGb6jbbWWYXRCdM6-3ATFGhu64OwPv9RGK7rg7A-_1EYuWZ6609xuoV1NzpqI9QdyRdkHwyF2JYR5ZoQ4qOzpbr">
+                        <Button onClick={e=>setViewComments(!viewComments)} spos="-209px" url="https://static.xx.fbcdn.net/rsrc.php/v3/yE/r/BD8jnr5MFVK.png?_nc_eui2=AeGb6jbbWWYXRCdM6-3ATFGhu64OwPv9RGK7rg7A-_1EYuWZ6609xuoV1NzpqI9QdyRdkHwyF2JYR5ZoQ4qOzpbr">
                             <i></i>
                             Comment
                         </Button>
